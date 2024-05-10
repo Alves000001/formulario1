@@ -7,35 +7,76 @@
     <script src="formulario1.css"></script>
 </head>
 <body>
-    <div> 
-        <h1>Formulario</h1>
-        <p>Busque mais informações</p>
+    <div class="Campo"> 
+        <h1 id="Titulo">Formulario</h1>
+        <p id="Subtitulo">Busque mais informações</p>
         <br>
     </div>
     <form>
-        <fieldset>
-            <div>
+        <fieldset class="Grupo">
+            <div class="CAmpo">
                 <label>nome</label>
                 <input type="text" nome="nome" id="nome">
             </div>
-            <div>
+            <div class="Campo">
                 <label>idade</label>
                 <input type="text" nome="idade" id="idade">
             </div>
         </fieldset>
-        <div>
+        <div class="Campo">
             <label>Email</label>
             <input type="email" nome="email" id="email">
         </div>
-        <div>
+        <div class="Campo">
             <label>Qual desses voçe desenvolve bem?</label>
-            <input type="radio" nome="devweb" value="frontend">J.S
+            <input type="radio" nome="devweb" value="frontend"checkd>J.S
             <label>
                 <input type="radio" nome="debweb" value="backend">HTML
             </label>
             <label>
                 <input type="radio" nome="debweb" value="backend">JAVA
             </label>
+        </div>
+
+        <div class="Campo">
+            <label>Senerioridade</label>
+            <option select disabled value=""Selecione></option>
+            <select id="senerioridade">
+            <option>Junior</option>
+            <option>Pleno</option>
+            <option>Senior</option>
+        </select>
+        </div>
+
+        <fieldset class="Grupo">
+            <div class="Campo">
+                <label>Selecione as tecnoligia que utiliza: </label><br><br>
+                <input type="checkbox" id="tecnoligia1" nome="tecnoligia1" value="HTML">
+                <label for="tecnoligia1">Html</label>
+                <input type="checkbox" id="tecnoligia2" nome="tecnoligia1" value="CSS">
+                <label for="tecnoligia2">CSS</label>
+                <input type="checkbox" id="tecnoligia3" nome="tecnoligia3" value="JAVASCRIPT">
+                <label for="tecnoligia3">JAVASCRIPT</label>
+                <input type="checkbox" id="tecnoligia4" nome="tecnoligia4" value="PHP">
+                <label for="tecnoligia4">PHP</label>
+                <input type="checkbox" id="tecnoligia5" nome="tecnoligia5" value="CA">
+                <label for="tecnoligia5">CA</label>
+                <input type="checkbox" id="tecnoligia6" nome="tecnoligia6" value="PYTHON">
+                <label for="tecnoligia6">PHYTHON</label>
+                <input type="checkbox" id="tecnoligia7" nome="tecnoligia7" value="JAVA">
+                <label for="tecnoligia7">JAVA</label>
+
+                
+            </div>
+        </fieldset>
+
+        <div class="Campo">
+            <br>
+            <label>Conte um pouco da sua experiencia</label>
+            <textarea rows="6" style="width:26" id="experiencia" nome="experiencia"></textarea>
+            <div>
+                <button type="submit">Concluido</button>
+            </div>
         </div>
 
     </form>
